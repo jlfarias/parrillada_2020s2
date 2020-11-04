@@ -1,3 +1,20 @@
 import comidas.*
 import comensales.*
 import cocina.*
+
+	test "haburguesa" {
+
+	const hambDeCarne = new HamburguesaDeCarne(tipoDePan = panCasero)
+	
+	assert.equals(80, hambDeCarne.valoracion())
+	
+	
+	const hVegetariana = new HamburguesaVegetarinas(tipoDePan = panDeMasaMadre)
+	hVegetariana.legumbre("garbanzos")
+	
+	assert.equals(122, hVegetariana.valoracion())
+	
+	
+	
+	
+	}
